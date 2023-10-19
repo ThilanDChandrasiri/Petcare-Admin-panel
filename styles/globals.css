@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+    max-height:100%
+}
+
+input, textarea, select{
+    @apply border border-gray-200 rounded-md px-4 py-1 w-full hover:border-blue-900 ;
+    @apply shadow-md;
+    @apply mb-2;
+}
+
+input:focus, textarea:focus, select:focus{
+    @apply border-blue-500;
+}
+
+h1{
+    @apply text-primary2 mb-2 text-xl;
+}
+label{
+    @apply text-primary text-sm;
+}
+.btn-primary{
+    @apply bg-primary2 text-white px-4 py-1 rounded-md;
+}
+
+table.basic{
+    @apply w-full shadow-lg rounded-lg;
+}
+
+table.basic thead tr td{
+    @apply bg-tablehead px-4 py-2 font-semibold uppercase border-b border-blue-500;
+}
+table.basic thead tr th{
+    @apply bg-tablehead px-4 py-2 font-semibold uppercase border-b border-blue-500;
+}
+
+table.basic tr td{
+    @apply p-1 px-4 py-1;
+}
+
+table.basic a{
+    @apply  text-white text-sm py-1 px-2 rounded-md inline-flex gap-1 mr-1 items-center;
+}
+
+.btn-default, .btn-default1, .btn-red {
+    @apply px-4 py-1 rounded-md;
+}
+.btn-red {
+    @apply bg-red1 text-white;
+}
+.btn-default {
+    @apply bg-green-500 text-white;
+}
+.delete-h1 {
+    @apply text-red-600 text-center
+}
+
+.btn-default1 {
+    @apply bg-green-500 text-white;
+    }
+.theadright{
+    @apply rounded-tr-lg;
+}
+.theadleft{
+    @apply rounded-tl-lg;
+}
+
